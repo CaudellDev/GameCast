@@ -14,6 +14,11 @@ import java.util.LinkedList;
 public abstract class Deck
 {
     LinkedList<Card> cards;
+    boolean visible;
+    
+    // Cards msy be in players hands.
+    // This always allows to know the full size of the deck.
+    int size;
     
     public Deck()
     {

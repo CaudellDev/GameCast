@@ -8,6 +8,7 @@
  *
  * @author Tyler
  */
-public class Card {
-    
+public class Card
+{
+    boolean faceUp;
 }
