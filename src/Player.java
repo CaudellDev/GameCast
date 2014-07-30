@@ -8,6 +8,17 @@
  *
  * @author Tyler
  */
-public class Player {
+public abstract class Player
+{
+    String name;
     
+    public Player()
+    {
+        name = "<No name>";
+    }
+    
+    public Player(String name)
+    {
+        this.name = name;
+    }
 }
