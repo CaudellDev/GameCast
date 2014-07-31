@@ -1,3 +1,5 @@
+package GameParts;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -8,7 +10,6 @@
  *
  * @author Tyler
  */
-public class Card
-{
-    boolean faceUp;
+public class Roll {
+    
 }
