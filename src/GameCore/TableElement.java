@@ -14,7 +14,7 @@ import java.awt.Point;
  * 
  * @author Tyler
  */
-public class TableElement
+public abstract class TableElement
 {
     // Square defining spot on the image in Board, in pixels.
     private Point topLeft;
@@ -26,19 +26,39 @@ public class TableElement
     private int enterCount;
     private int passCount; 
     private int leaveCount;
-
-    public void enterElement()
-    {
-
-    }
-
-    public void leaveElement()
-    {
-
-    }
     
-    public void passElement()
+    public TableElement()
     {
         
     }
+    
+    public TableElement(Point topLeft, Point botRight)
+    {
+        this.topLeft = topLeft;
+        this.botRight = botRight;
+    }
+    
+    public Point getTopLeft()
+    {
+        return topLeft;
+    }
+    
+    public Point getBotRight()
+    {
+        return botRight;
+    }
+    
+    public Point getTopRight()
+    {
+        return new Point(topLeft.x, botRight.y);
+    }
+    
+    public Point getBotLeft()
+    {
+        return new Point(botRight.x, topLeft.y);
+    }
+    
+    public abstract void enterElement();
+    public abstract void leaveElement();
+    public abstract void passElement();
 }

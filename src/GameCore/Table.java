@@ -8,7 +8,12 @@ package GameCore;
  * 
  * @author Tyler
  */
-public class Table
+public abstract class Table
 {
+    public Table()
+    {
+        
+    }
     
+    public abstract void render();
 }

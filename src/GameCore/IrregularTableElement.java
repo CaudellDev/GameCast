@@ -15,7 +15,7 @@ package GameCore;
  * <p>
  * @author Tyler
  */
-public class IrregularTableElement extends TableElement
+public abstract class IrregularTableElement extends TableElement
 {
-    
+    // Unsure how to store the irregular area.
 }
