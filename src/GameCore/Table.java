@@ -1,13 +1,11 @@
 package GameCore;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
- *
+ * Table is to organize how the players
+ * interact with the game, and all of it's
+ * components. Table doesn't handle the logic
+ * of the game, it handles how it's displayed.
+ * 
  * @author Tyler
  */
 public class Table

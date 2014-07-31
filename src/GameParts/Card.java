@@ -1,16 +1,18 @@
 package GameParts;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
- *
+ * Card is used in games that require
+ * cards to play.
+ * <p>
+ * Card stores the state, graphics, and
+ * other tasks it needs.
+ * <p>
+ * Card is usually in a deck, but doesn't
+ * need to be.
+ * 
  * @author Tyler
  */
-public class Card
+public abstract class Card
 {
     boolean faceUp;
 }

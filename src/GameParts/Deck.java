@@ -1,16 +1,12 @@
 package GameParts;
 
-
 import java.util.LinkedList;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
- *
+ * Deck is basically an array of Cards,
+ * with some basic deck functions put in
+ * like shuffle, or draw.
+ * 
  * @author Tyler
  */
 public abstract class Deck

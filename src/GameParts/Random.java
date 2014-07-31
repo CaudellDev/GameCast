@@ -1,15 +1,13 @@
 package GameParts;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
- *
+ * Random is a random number generator,
+ * that has some extra features and can
+ * be easily added upon.
+ * 
  * @author Tyler
  */
-public class Random {
+public class Random
+{
     
 }

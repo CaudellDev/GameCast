@@ -1,15 +1,12 @@
 package GameParts;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
- *
+ * GamePiece is a way for the game
+ * or player to keep visual track of
+ * information about the game.
+ * 
  * @author Tyler
  */
-public class GamePiece {
+public abstract class GamePiece {
     
 }
