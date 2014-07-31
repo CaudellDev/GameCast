@@ -2,12 +2,6 @@ package GameCore;
 
 import GameParts.Player;
 import java.util.LinkedList;
-import java.util.Queue;
-
-enum Event
-{
-    
-}
 
 /**
  * 
@@ -18,8 +12,6 @@ public abstract class GameCast
     private LinkedList<Player> players;
     private Table table;
     private int playerLimit;
-    
-    private Queue<Event> events;
     
     public GameCast()
     {
