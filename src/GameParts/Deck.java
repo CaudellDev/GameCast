@@ -1,5 +1,6 @@
 package GameParts;
 
+import GameCore.TableElement;
 import java.util.LinkedList;
 
 /**
@@ -12,15 +13,51 @@ import java.util.LinkedList;
 public abstract class Deck
 {
     LinkedList<Card> cards;
+    TableElement position;
     boolean visible;
+    boolean sameSide; // Keeps all cards flipped correctly if true.
     
-    // Cards msy be in players hands.
-    // This always allows to know the full size of the deck.
+    // This always allows to know the full size of the deck,
+    // even when in possible use.
     int size;
     
     public Deck()
     {
         cards = new LinkedList<>();
+    }
+    
+    /**
+     * Removes a card from the end of cards, and returns it.
+     * <p>
+     * Not to be confused with drawing graphics.
+     * 
+     * @return Card from the top of the deck.
+     */
+    public Card drawCard()
+    {
+        return cards.removeLast();
+    }
+    
+    public Card getCardAt(int loc, boolean remove)
+    {
+        if (remove)
+            return cards.remove(loc);
+        
+        return cards.get(loc);
+    }
+    
+    public void addToTop(Card newCard)
+    {
+        // addLast, becase it's the same spot as
+        // removeLast.
+        cards.addLast(newCard);
+    }
+    
+    public void addToBottom(Card newCard)
+    {
+        // addFirst because it's opposite to
+        // removeLast.
+        cards.addFirst(newCard);
     }
     
     public void shuffle()

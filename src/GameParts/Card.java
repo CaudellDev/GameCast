@@ -1,5 +1,7 @@
 package GameParts;
 
+import java.awt.Image;
+
 /**
  * Card is used in games that require
  * cards to play.
@@ -14,5 +16,35 @@ package GameParts;
  */
 public abstract class Card
 {
-    boolean faceUp;
+    private boolean faceUp;
+    private boolean visible;
+    
+    public Card()
+    {
+        // Use default image files.
+        faceUp = false;
+        visible = false;
+    }
+    
+    public boolean isVisible()
+    {
+        return visible;
+    }
+    
+    public boolean isFaceUp()
+    {
+        return faceUp;
+    }
+    
+    public void flip()
+    {
+        faceUp = !faceUp;
+    }
+    
+    // If there are special tasks that
+    // need to be done upon action.
+    public abstract void use();
+    public abstract void discard();
+    public abstract void drawCard(); // Not to be confused with drawing graphics.
+    public abstract void display();
 }
